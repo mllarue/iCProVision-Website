@@ -29,7 +29,7 @@
 
 body {
   font-family: 'Lato', Arial;
-  color: #000000;
+  color: #283853;
   -webkit-font-smoothing: antialiased;
 }
 a {
@@ -166,8 +166,11 @@ header .navbar-default.scrolled ul.navbar-nav {
   bottom: -70px;
 }
 .section-heading {
-  margin: 60px 0 80px;
-  text-align: center;
+  margin: 60px 0 40px;
+  text-align: left;
+}
+header .section-heading {
+    text-align: center;
 }
 .section-heading h1 {
   display: inline-block;
@@ -268,81 +271,6 @@ section#features .media.feature:first-child {
 section#features img {
   margin: 0 auto 20px;
 }
-section#screens .slider {
-  margin: 50px 0;
-}
-section#screens .slider div img {
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  border-radius: 20px;
-  padding: 10px;
-  display: inline;
-}
-section#screens .slider div h4 {
-  text-align: center;
-  margin-top: 40px;
-  font-size: 16px;
-}
-section#screens .slider .slick-dots li button {
-  -webkit-border-radius: 5em;
-  -moz-border-radius: 5em;
-  -ms-border-radius: 5em;
-  -o-border-radius: 5em;
-  border-radius: 5em;
-}
-section#screens .slick-prev,
-section#screens .slick-next {
-  width: 50px;
-  height: 50px;
-  top: 44%;
-}
-section#screens .slick-slide {
-  text-align: center;
-}
-section#screens .slick-prev:before {
-  content: "\f104";
-}
-section#screens .slick-next:before {
-  content: "\f105";
-}
-section#screens .slick-prev:before,
-section#screens .slick-next:before {
-  font-size: 34px;
-  -webkit-border-radius: 5em;
-  -moz-border-radius: 5em;
-  -ms-border-radius: 5em;
-  -o-border-radius: 5em;
-  border-radius: 5em;
-  line-height: 45px;
-  color: #CCC;
-  border: 2px solid #CCC;
-  width: 50px;
-  display: inline-block;
-  height: 50px;
-  text-align: center;
-}
-section#screens .filter {
-  text-align: center;
-}
-section#screens .filter a {
-  display: inline-block;
-  padding: 7px 20px;
-  text-decoration: none;
-  -webkit-border-radius: 5em;
-  -moz-border-radius: 5em;
-  -ms-border-radius: 5em;
-  -o-border-radius: 5em;
-  border-radius: 5em;
-  margin: 10px 5px;
-  text-transform: uppercase;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-}
 /* demo video Section */
 section#demo .video-container {
   padding: 20px;
@@ -355,22 +283,7 @@ section#demo iframe {
   height: 100%;
   border: none;
 }
-/* Get app Section */
-section#getApp {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding: 70px 0;
-}
-section#getApp .platforms {
-  margin: 5px auto 120px auto;
-  text-align: center;
-}
-section#getApp .platforms .btn {
-  margin-right: 10px;
-  margin-bottom: 20px;
-}
+
 /* support section */
 section#support {
   padding: 0 0 150px 0;
@@ -734,6 +647,24 @@ section#about div h1, section#team div h1 {
   margin-top: -10px;
   font-size: 42px;
 }
+section#team .team-item {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 25px;
+  min-height: 300px;
+}
+section#team div h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 25px;
+  color: #283853;
+}
+section#team .eye {
+	max-width: 170px;
+	margin: 0 auto;
+}
 /* small desktop */
 @media only screen and (min-width: 960px) and (max-width: 1180px) {
 	.headerContainer {
@@ -785,7 +716,13 @@ section#about div h1, section#team div h1 {
 	background: url(../img/header_background@2x.jpg) no-repeat top center fixed; 
 	background-size: 100%;
 }
-/* For any viewports less than 1000px wide */
+/* For any viewports less than 844px wide */
+@media (max-width: 992px) {
+	.section-heading {
+	    text-align: center;
+    }
+}
+/* For any viewports less than 844px wide */
 @media (max-width: 844px) {
     .headerContainer {
         background-size: 844px auto; /* Force the image to its minimum width */
