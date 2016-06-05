@@ -179,28 +179,14 @@ header .section-heading {
 }
 .section-heading h1 {
   display: inline-block;
-  font-size: 55px;
-  font-weight: 300;
-  margin-bottom: 0;
-}
-.section-heading p {
-  font-size: 25px;
-  color: #999999;
   font-weight: 300;
 }
-.section-heading .divider:after {
-  content: "";
-  position: relative;
-  height: 4px;
-  width: 60px;
-  display: block;
-  text-align: center;
-  margin: 13px auto;
-  -webkit-border-radius: 5em;
-  -moz-border-radius: 5em;
-  -ms-border-radius: 5em;
-  -o-border-radius: 5em;
-  border-radius: 5em;
+section#support .section-heading {
+    text-align: center;	
+}
+section#support div h1 {
+    text-align: center;
+	color: white;
 }
 .section-heading.inverse h1,
 .section-heading.inverse p {
@@ -209,7 +195,6 @@ header .section-heading {
 .section-heading.inverse .divider:after {
   background: #ffffff;
 }
-
 .no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;
@@ -458,21 +443,6 @@ section::after {
 .btn.btn-default {
   border: none;
   background: #ffffff;
-  /* Old browsers */
-  background: -moz-linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ffffff), color-stop(100%, #cccccc));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
-  /* IE10+ */
-  background: linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#cccccc, GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
 }
 .btn.btn-lg {
   padding: 10px 25px;
@@ -679,6 +649,51 @@ section#team .eye {
 	max-width: 170px;
 	margin: 0 auto;
 }
+section#support .section-heading div h1 {
+	color: white;
+}
+section#support .section-heading p {
+	text-align: center;
+	font-weight: 300;
+	color: white;
+	font-size: 24px;
+}
+section#support .mc-field-group {
+	clear: none;
+}
+section#support .mc-field-group label {
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+section#support .mc-field-group input {
+	font-weight: 400;
+	min-height: 60px;
+    color: #283853;
+	font-size: 24px;
+	vertical-align: top;
+}
+section#support .explanation-input input {
+	min-height: 120px;
+}
+section#support .explanation-input {
+	margin-top: 30px;
+}
+section#support form {
+	padding-left: 100px;
+	padding-right: 100px;	
+}
+section#support #mc_embed_signup .button {
+	background-color: #ADE3EC;
+	color: #283853;
+	font-size: 22px;
+	font-weight: 700;
+	height: 60px;
+	width: 96%;
+}
+section#support #mce-success-response {
+	text-align: center;
+	color: #8FFF23;
+}
 /* small desktop */
 @media only screen and (min-width: 960px) and (max-width: 1180px) {
 	.headerContainer {
@@ -725,6 +740,10 @@ section#team .eye {
 	  margin-top: -10px;
 	  font-size: 24px;
 	}
+	section#support form {
+		padding-left: 40px;
+		padding-right: 40px;	
+	}
 }
 .headerContainer {
 	background: url(../img/header_background@2x.jpg) no-repeat top center fixed; 
@@ -746,40 +765,10 @@ section#team .eye {
 header .navbar-default ul.navbar-nav li a.getApp {
   color: #3c79b4;
   background: #ffffff;
-  /* Old browsers */
-  background: -moz-linear-gradient(180deg, #ffffff 0%, #e0e0e0 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ffffff), color-stop(100%, #e0e0e0));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(180deg, #ffffff 0%, #e0e0e0 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(180deg, #ffffff 0%, #e0e0e0 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(180deg, #ffffff 0%, #e0e0e0 100%);
-  /* IE10+ */
-  background: linear-gradient(180deg, #ffffff 0%, #e0e0e0 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#e0e0e0, GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
 }
 header .navbar-default ul.navbar-nav li a.getApp:hover {
   color: #4081bf;
   background: #ffffff;
-  /* Old browsers */
-  background: -moz-linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ffffff), color-stop(100%, #cccccc));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
-  /* IE10+ */
-  background: linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#cccccc, GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -ms-transition: all 0.25s ease-in-out;
@@ -808,9 +797,6 @@ header .navbar-default.scrolled ul.navbar-nav li a:hover:after {
 }
 header .navbar-default.scrolled .navbar-brand {
   background: #336799;
-}
-section .section-heading .divider:after {
-  background: #66cdcc;
 }
 section#about .about-item i.fa {
   border: 2px solid #66cdcc;
@@ -1010,21 +996,6 @@ footer .rights a {
 }
 .btn.btn-default {
   background: #ffffff;
-  /* Old browsers */
-  background: -moz-linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ffffff), color-stop(100%, #cccccc));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
-  /* IE10+ */
-  background: linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#cccccc, GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
   color: #336799;
 }
 .btn.btn-default:hover {
