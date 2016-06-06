@@ -161,6 +161,12 @@ header .navbar-default.scrolled ul.navbar-nav {
 .scrollpoint {
   opacity: 0;
 }
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	.scrollpoint {
+	  opacity: 1;
+	}
+}
 .scrollpoint.active {
   opacity: 1 \0;
 }
@@ -187,6 +193,7 @@ section#support .section-heading {
 section#support div h1 {
     text-align: center;
 	color: white;
+	margin-bottom: 30px;
 }
 .section-heading.inverse h1,
 .section-heading.inverse p {
@@ -209,6 +216,10 @@ section#about {
   background-color: transparent;
   position: relative;
   padding-bottom: 50px;
+}
+section#about .container {
+	padding-right: 45px;
+	padding-left: 45px;
 }
 section#about .about-item {
   text-align: center;
@@ -668,7 +679,7 @@ section#support .mc-field-group label {
 section#support .mc-field-group input {
 	font-weight: 400;
 	min-height: 60px;
-    color: #283853;
+    color: #657893;
 	font-size: 24px;
 	vertical-align: top;
 }

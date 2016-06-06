@@ -156,15 +156,15 @@ $(document).ready(function() {
 
     appMaster.smoothScroll();
 
-    appMaster.reviewsCarousel();
+    // appMaster.reviewsCarousel();
 
-    appMaster.screensCarousel();
+    // appMaster.screensCarousel();
 
     appMaster.animateScript();
 
-    appMaster.revSlider();
+    // appMaster.revSlider();
 
-    appMaster.scrollMenu();
+    // appMaster.scrollMenu();
 
     appMaster.placeHold();
 
