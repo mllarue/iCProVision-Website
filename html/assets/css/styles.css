@@ -683,8 +683,36 @@ section#support .mc-field-group input {
 	font-size: 24px;
 	vertical-align: top;
 }
+section#support .mc-field-group textarea {
+	font-weight: 400;
+	min-height: 120px;
+    color: #657893;
+	font-size: 24px;
+	vertical-align: top;
+	width: 100%;
+	border: 1px solid #ABB0B2;
+	resize: none;
+}
+#mc_embed_signup textarea {
+    border-radius:
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
 section#support .explanation-input input {
 	min-height: 120px;
+}
+@media only screen and (max-width : 767px) {
+	section#support .mc-field-group input {
+		font-size: 20px;
+		min-height: 40px;	
+	}
+	section#support .explanation-input input {
+		min-height: 80px;
+	}
+	section#support .mc-field-group textarea {
+		font-size: 20px;
+	}
 }
 section#support .explanation-input {
 	margin-top: 30px;
@@ -747,7 +775,7 @@ section#support #mce-success-response {
 	  margin-top: 36px;
 	  font-size: 42px;
 	}
-	section#about div h1, section#team div h1 {
+	section#about div h1, section#team div h1, section#support div h1 {
 	  text-align: center;
 	  margin-top: -10px;
 	  font-size: 24px;
@@ -755,6 +783,9 @@ section#support #mce-success-response {
 	section#support form {
 		padding-left: 40px;
 		padding-right: 40px;	
+	}
+	section#support .section-heading p {
+		font-size: 20px;
 	}
 }
 .headerContainer {
